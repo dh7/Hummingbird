@@ -24,6 +24,7 @@
                 <outlet property="showMenuIcon" destination="pNU-or-TOn" id="maybe-some-special-id"/>
                 <outlet property="versionLabel" destination="eE9-Pq-pG9" id="Cny-Dl-tDQ"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+                <outlet property="capitalizeButton" destination="capitalize-btn-123" id="capitalize-outlet-123"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -239,6 +240,18 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="capitalize-btn-123">
+                        <rect key="frame" x="17" y="100" width="150" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Capitalize Selected Text" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="capitalize-cell-123">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="capitalizeSelectedText:" target="-2" id="capitalize-action-123"/>
+                            <outlet property="capitalizeButton" destination="-2" id="cap-outlet-id"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <connections>

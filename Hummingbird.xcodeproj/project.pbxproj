@@ -69,6 +69,7 @@
 		B02F18934323BB42D8CCAB05 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02F125CE1BC18D269C53372 /* QuartzCore.framework */; };
 		F907A53FB2CAEBEB31895CD2 /* contributing.md in Resources */ = {isa = PBXBuildFile; fileRef = F907A3568D9301F4E6A9736F /* contributing.md */; };
 		F907ABDDEEAF5BF83F0AF9EA /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = F907A4D20267246716869421 /* readme.md */; };
+		TEXTMANAGER_BUILD_ID /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = TEXTMANAGER_ID /* TextManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 		F907A3568D9301F4E6A9736F /* contributing.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = contributing.md; sourceTree = "<group>"; };
 		F907A4D20267246716869421 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
 		F907AB0E17E61960C00A089F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		TEXTMANAGER_ID /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				5A8F910C227C3DF200B78C47 /* TrackingInfo.swift */,
 				5AA93C98231953D100B268CF /* Controllers */,
 				5A8F911B227C4CF600B78C47 /* Extensions */,
+				TEXTMANAGER_ID /* TextManager.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				5A8F911A227C461D00B78C47 /* CGEvent+ext.swift in Sources */,
 				5A46191622847CF40078E1B2 /* Common.swift in Sources */,
 				5AB3A6F52334D7AA00D40DBF /* AppStateMachineTests.swift in Sources */,
+				TEXTMANAGER_BUILD_ID /* TextManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +466,7 @@
 				5A8F9113227C41C800B78C47 /* State.swift in Sources */,
 				5A8F9119227C461D00B78C47 /* CGEvent+ext.swift in Sources */,
 				5A33F7B3250A404400956DD3 /* Delta.swift in Sources */,
+				TEXTMANAGER_BUILD_ID /* TextManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

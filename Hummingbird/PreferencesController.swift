@@ -3,10 +3,11 @@
 //  Hummingbird
 //
 //  Created by Sven A. Schmidt on 02/05/2019.
-//  Copyright © 2019 finestructure. All rights reserved.
+//  Copyright 2019 finestructure. All rights reserved.
 //
 
 import Cocoa
+import Foundation
 
 
 protocol PreferencesControllerDelegate: class {
@@ -33,6 +34,7 @@ class PreferencesController: NSWindowController {
     @IBOutlet weak var resizeInfoLabel: NSTextField!
     
     @IBOutlet weak var showMenuIcon: NSButton!
+    @IBOutlet weak var capitalizeButton: NSButton!
 
     @IBOutlet weak var registrationStatusLabel: NSTextField!
     @IBOutlet weak var versionLabel: NSTextField!
@@ -108,6 +110,13 @@ class PreferencesController: NSWindowController {
             DefaultsKeys.showMenuIcon.rawValue)
         updateCopy()
         (NSApp.delegate as? AppDelegate)?.updateStatusItemVisibility()
+    }
+
+    @IBAction func capitalizeSelectedText(_ sender: Any) {
+        if let text = TextManager.getSelectedText() {
+            let capitalizedText = text.uppercased()
+            TextManager.setSelectedText(capitalizedText)
+        }
     }
 }
 

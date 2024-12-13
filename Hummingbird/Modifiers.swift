@@ -29,6 +29,13 @@ enum Resize: Kind {
 }
 
 
+enum Capitalize: Kind {
+    static var defaultRawValue: UInt64 {
+        return CGEventFlags([.maskSecondaryFn, .maskControl, .maskShift]).rawValue
+    }
+}
+
+
 struct Modifiers<K: Kind>: OptionSet, Hashable {
     let rawValue: UInt64
 
